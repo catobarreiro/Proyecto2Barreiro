@@ -33,7 +33,7 @@
     height: 50px;
 }
 
-.encabezado__contenido-titulo{
+.encabezado__contenido-titulo {
     font-family: 'Dancing';
     text-align: center;
 }
@@ -48,8 +48,8 @@ h1 a {
 .encabezado__contenido-menu {
     list-style-type: none;
     text-align: end;
-     ;
-    
+    ;
+
 }
 
 .encabezado__contenido-menu li {
@@ -58,10 +58,11 @@ h1 a {
     margin: 0 10px 0 0;
 
 }
-.encabezado__contenido-menu li a  {
+
+.encabezado__contenido-menu li a {
     font-size: 20px;
     font-family: 'Sans';
-    padding:  2px 7px 2px 7px;
+    padding: 2px 7px 2px 7px;
     color: #395144;
     background-color: #fff;
     text-decoration: none;
@@ -146,24 +147,25 @@ main {
     border-radius: 5px;
 }
 
-.boton__galeria h2 a{
+.boton__galeria h2 a {
     text-decoration: none;
     color: #395144;
 }
 
 .boton__galeria h2 a:hover {
-        background-color: #395144;
-        color: #F0EBCE;
-        border-radius: 5px;
-    }
+    background-color: #395144;
+    color: #F0EBCE;
+    border-radius: 5px;
+}
 
 .boton__galeria-fotos {
     width: 90%;
     margin: auto;
     list-style: none;
     display: flex;
-    
+
 }
+
 .boton__galeria-fotos img {
     width: 150px;
     height: 100px;
@@ -204,10 +206,11 @@ input {
     display: flex;
 }
 
-.formulario__casillero-consulta{
+.formulario__casillero-consulta {
     width: 430px;
     height: 100px;
 }
+
 .formulario__casillero-nombre {
     width: 250px;
 }
@@ -235,7 +238,7 @@ input {
 
 
 /* MAPA */
-.informacion__ubicacion-subtitulo{
+.informacion__ubicacion-subtitulo {
     font-family: 'Sans';
     color: #395144;
     text-align: start;
@@ -271,7 +274,8 @@ input {
     background-color: #F0EBCE;
     border-radius: 10px;
 }
-.galeria li{
+
+.galeria li {
     margin: 5px;
 }
 
@@ -293,7 +297,7 @@ input {
     font-family: 'sans';
 }
 
-.modal:target{
+.modal:target {
     display: inline-block;
     position: fixed;
     background: rgba(0, 0, 0, 0.8);
@@ -342,7 +346,7 @@ input {
     border: 5px solid #fff;
     border-radius: 8px;
     box-sizing: border-box;
-    
+
 }
 
 .cerrar {
@@ -392,7 +396,7 @@ input {
 
 .viaje__contenido {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
 }
 
@@ -405,7 +409,7 @@ input {
     padding: 15px;
     width: 340px;
     position: relative;
-    margin: 30px ;
+    margin: 30px;
 }
 
 .tarjeta__viaje-encabezado {
@@ -498,7 +502,7 @@ input {
     padding: 20px;
     width: 300px;
     position: relative;
-    margin: 30px ;
+    margin: 30px;
 }
 
 .tarjeta__opiniones-texto {
@@ -506,8 +510,8 @@ input {
 }
 
 .tarjeta__opiniones-texto-comillas {
-font-size: 100px;
-margin-top: 10px;
+    font-size: 100px;
+    margin-top: 10px;
 }
 
 .tarjeta__opiniones-persona {
@@ -547,14 +551,14 @@ margin-top: 10px;
 }
 
 .footer__titulo a {
-color: #F0EBCE;
-font-size: 50px;
+    color: #F0EBCE;
+    font-size: 50px;
 }
 
 .footer__contenido {
-/* margin: 0px 1px 0px 1px; */
-display: flex;
-align-items: center;
+    /* margin: 0px 1px 0px 1px; */
+    display: flex;
+    align-items: center;
 }
 
 .footer__informacion {
@@ -587,4 +591,3 @@ align-items: center;
     text-decoration: underline;
     font-size: 20px;
 }
-
