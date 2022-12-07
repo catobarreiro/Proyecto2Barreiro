@@ -1,0 +1,590 @@
+/* FUENTES */
+@font-face {
+    font-family: 'Dancing';
+    src: url('../tipografias//DancingScript-VariableFont_wght.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sans';
+    src: url('../tipografias/JosefinSans-VariableFont_wght.ttf');
+    font-style: normal;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* ENCABEZADO */
+.encabezado {
+    padding: 25px 15px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.encabezado__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.encabezado__contenido-titulo{
+    font-family: 'Dancing';
+    text-align: center;
+}
+
+h1 a {
+    color: #395144;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+
+.encabezado__contenido-menu {
+    list-style-type: none;
+    text-align: end;
+     ;
+    
+}
+
+.encabezado__contenido-menu li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+
+}
+.encabezado__contenido-menu li a  {
+    font-size: 20px;
+    font-family: 'Sans';
+    padding:  2px 7px 2px 7px;
+    color: #395144;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.encabezado__contenido-menu li a:hover {
+    background-color: #395144;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+/* CONTENIDO HOME */
+.home {
+    background-image: url('../imagenes/imagen\ 9.jpg');
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 550px;
+    width: auto;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home a {
+    font-family: 'Sans';
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+span img {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+
+
+/* CONTENIDO-CONOCENOS */
+main {
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.informacion {
+    display: flex;
+    font-family: 'Sans';
+}
+
+.informacion__historia {
+    margin-right: 50px;
+}
+
+.informacion_historia-subtitulo {
+    font-family: 'Sans';
+    color: #395144;
+    text-align: start;
+    border-radius: 5px;
+}
+
+
+.informacion__pueblo {
+    margin-left: 3px;
+}
+
+
+.informacion__pueblo-subtitulo {
+    font-family: 'Sans';
+    color: #395144;
+    text-align: start;
+    border-radius: 5px;
+}
+
+.boton__galeria h2 a{
+    text-decoration: none;
+    color: #395144;
+}
+
+.boton__galeria h2 a:hover {
+        background-color: #395144;
+        color: #F0EBCE;
+        border-radius: 5px;
+    }
+
+.boton__galeria-fotos {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    
+}
+.boton__galeria-fotos img {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+
+}
+
+.boton__galeria-fotos li {
+    margin: 8px;
+    /* box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9); */
+}
+
+.boton__galeria-fotos li:hover {
+    margin: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
+}
+
+
+/* FORMULARIOS */
+.formulario__casillero {
+    display: flex;
+}
+
+.formulario__titulo a {
+    font-family: 'sans';
+    text-decoration: none;
+    color: #395144;
+}
+
+input {
+    padding: 5px;
+    margin: 5px 5px 9px 0px;
+    border: 4px solid #395144;
+    outline: none;
+    font-size: 15px;
+    font-family: 'sans';
+    border-radius: 8px;
+    display: flex;
+}
+
+.formulario__casillero-consulta{
+    width: 430px;
+    height: 100px;
+}
+.formulario__casillero-nombre {
+    width: 250px;
+}
+
+.formulario__casillero-celular {
+    width: 250px;
+}
+
+.formulario__casillero-email {
+    width: 250px;
+}
+
+.formulario__boton {
+    font-size: 20px;
+    color: #fff;
+    background-color: #395144;
+}
+
+.formulario__boton:hover {
+    font-size: 21px;
+    color: #fff;
+    background-color: #395144;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 7);
+}
+
+
+/* MAPA */
+.informacion__ubicacion-subtitulo{
+    font-family: 'Sans';
+    color: #395144;
+    text-align: start;
+    border-radius: 5px;
+}
+
+.informacion__ubicacion-mapa {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 7);
+    border-radius: 10px;
+    width: 500px;
+    height: 615px;
+}
+
+
+
+/* CONTENIDO GALERIA */
+.galeria__titulo {
+    color: #395144;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'sans';
+}
+
+.galeria {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F0EBCE;
+    border-radius: 10px;
+}
+.galeria li{
+    margin: 5px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.galeria img:hover {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9)
+}
+
+.modal {
+    display: none;
+    font-family: 'sans';
+}
+
+.modal:target{
+    display: inline-block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+.imagen a:hover {
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+
+.imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 5px solid #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    
+}
+
+.cerrar {
+    display: block;
+    background: white;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+.cerrar:hover {
+    display: block;
+    background: white;
+    width: 30px;
+    height: 30px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+
+
+/* CONTENIDO VIAJE */
+.viaje__titulo {
+    font-family: 'Sans';
+    font-size: 40px;
+    text-align: center;
+    color: #395144;
+    justify-content: center;
+}
+
+.viaje__titulo h3 {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+.viaje__contenido {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+.tarjeta__viaje {
+    background-color: #F0EBCE;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: 'Sans';
+    height: 410px;
+    padding: 15px;
+    width: 340px;
+    position: relative;
+    margin: 30px ;
+}
+
+.tarjeta__viaje-encabezado {
+    position: relative;
+}
+
+.tarjeta__encabezado-etiqueta--destacado {
+    padding: 8px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+.tarjeta__viaje-encabezado-imagen {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.tarjeta__viaje-titulo {
+    margin-bottom: 0px;
+    font-size: 25px;
+    color: #395144;
+}
+
+.tarjeta__viaje-descripcion {
+    height: 50px;
+    margin-bottom: 10px;
+    /* overflow-y: scroll; */
+}
+
+.tarjeta__viaje-enlace {
+    background-color: #AA8B56;
+    text-decoration: none;
+    /* display: inline; */
+    /* pierden: margin top, bottom, height, width */
+    display: inline-block;
+    /* margin-top: 200px; */
+    /* margin-bottom: 500px; */
+    /* height: 50px;  */
+    width: 92%;
+    position: absolute;
+    bottom: 10px;
+    justify-items: center;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 20px;
+
+}
+
+.tarjeta__viaje-enlace:hover {
+    background-color: #AA8B56;
+    text-decoration: none;
+    width: 92%;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* CONTENIDO OPINIONES */
+.opiniones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tarjeta__opiniones-titulo {
+    font-family: 'Sans';
+    font-size: 40px;
+    text-align: center;
+    color: #395144;
+}
+
+.tarjeta__opiniones-contenido {
+    display: grid;
+    justify-content: center;
+}
+
+.tarjeta__opiniones {
+    background-color: #F0EBCE;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: 'Sans';
+    height: 300px;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    margin: 30px ;
+}
+
+.tarjeta__opiniones-texto {
+    display: flex;
+}
+
+.tarjeta__opiniones-texto-comillas {
+font-size: 100px;
+margin-top: 10px;
+}
+
+.tarjeta__opiniones-persona {
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta__opiniones-persona-foto {
+    border-radius: 50%;
+    width: 70px;
+    margin: 10px 10px 0px 10px
+}
+
+.tarjeta__opiniones-persona-nombre {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px 0px 0px 10px
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: rgba(57, 90, 68, 1);
+    border-radius: 5px;
+    margin-top: 100px;
+    height: 170px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__titulo {
+    font-family: 'Dancing';
+    /* text-align: left; */
+}
+
+.footer__titulo a {
+color: #F0EBCE;
+font-size: 50px;
+}
+
+.footer__contenido {
+/* margin: 0px 1px 0px 1px; */
+display: flex;
+align-items: center;
+}
+
+.footer__informacion {
+    font-family: "sans";
+    font-size: 15px;
+    color: black;
+    list-style-type: none;
+}
+
+.footer__informacion h3 {
+    margin: 10px;
+}
+
+.footer__menu {
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Sans';
+    text-decoration: none;
+}
+
+.footer__menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer__menu li a:hover {
+    color: black;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
