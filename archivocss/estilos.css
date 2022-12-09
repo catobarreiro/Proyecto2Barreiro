@@ -10,7 +10,9 @@
     src: url('../tipografias/JosefinSans-VariableFont_wght.ttf');
     font-style: normal;
 }
-
+*{
+    box-sizing: border-box;
+}
 /* *{
     margin: 0;
     padding: 0;
@@ -73,8 +75,6 @@ h1 a {
 }
 
 
-
-
 /* CONTENIDO HOME */
 .home {
     background-image: url('../imagenes/imagen\ 9.jpg');
@@ -102,10 +102,6 @@ h1 a {
     text-align: center;
 }
 
-.icono__menu {
-    display: none;
-}
-
 
 
 /* CONTENIDO-CONOCENOS */
@@ -119,10 +115,6 @@ h1 a {
 
 .informacion__texto {
     margin-right: 10px;
-}
-
-.informacion__historia {
-    /* margin-right: 50px; */
 }
 
 .informacion_historia-subtitulo {
@@ -597,6 +589,7 @@ input {
     color: black;
     text-decoration: none;
     font-size: 20px;
+    margin: 10px;
 }
 
 .footer__menu li a:hover {
@@ -609,12 +602,12 @@ input {
 /* MEDIAQUERIES */
 
 @media (max-width: 1110px) {
-    
+
     .tarjeta__viaje-encabezado-imagen {
         height: 170px;
-     }
+    }
 
-     .tarjeta__opiniones-persona-foto {
+    .tarjeta__opiniones-persona-foto {
         border-radius: 50%;
         width: 60px;
         margin: 10px 10px 0px 10px
@@ -630,11 +623,19 @@ input {
         display: none;
     }
 
-    .icono__menu {
+    .menu__responsive {
         display: inline;
     }
 
-    .icono__menu img {
+    .menu__icono {
+        display: inline;
+    }
+
+    .menu__icono:hover {
+
+    }
+
+    .menu__icono img {
         width: 45px;
         height: 45px;
     }
@@ -659,9 +660,7 @@ input {
     }
 
     .viaje__contenido {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
     }
 
     .opiniones {
@@ -670,15 +669,23 @@ input {
 
     .tarjeta__opiniones-texto-opinion {
         font-size: 17px;
-}
+    }
 }
 
 @media (max-width:725px) {
+
+    .footer {
+        height: 280px;
+        text-align: left;
+        align-items: center;
+        padding: 10px;
+    }
+
     .tarjeta__viaje-encabezado-imagen {
         height: 160px;
-     }
+    }
 
-     .tarjeta__opiniones-persona-foto {
+    .tarjeta__opiniones-persona-foto {
         border-radius: 50%;
         width: 57.5px;
         margin: 10px 10px 0px 10px
@@ -693,14 +700,75 @@ input {
 
     .footer {
         display: block;
-        height: 290px;
+        height: 300px;
+        text-align: left;
+        align-items: center;
+        padding: 10px;
     }
 
     .boton__galeria-fotos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    
     }
-    
+
+    .viaje__contenido {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tarjeta__viaje {
+        height: 370px;
+    }
+
+    .opiniones {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tarjeta__opiniones-persona-foto {
+        border-radius: 50%;
+        width: 64px;
+        margin: 10px 10px 0px 10px
+    }
+
+    .tarjeta__opiniones-texto-opinion {
+        font-size: 16px;
+    }
 }
 
+@media (max-width:512px) {
+    .footer {
+        display: block;
+        height: 370px;
+        text-align: left;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer__contenido {
+        display: block;
+    }
+
+    .formulario__casillero-consulta {
+        width: 90%;
+        height: 100px;
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width:391px) {
+    .encabezado a {
+        font-size: 48px;
+    }
+}
+
+@media (max-width:340px) {
+    .encabezado a {
+        font-size: 39px;
+    }
+}
+
+
+@media (max-width:300px) {
+    .encabezado a {
+        font-size: 34px;
+    }
+}
