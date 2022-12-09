@@ -10,17 +10,106 @@
     src: url('../tipografias/JosefinSans-VariableFont_wght.ttf');
     font-style: normal;
 }
-*{
-    box-sizing: border-box;
-}
-/* *{
-    margin: 0;
-    padding: 0;
-} */
 
 
 /* ENCABEZADO */
-.encabezado {
+
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+
+header {
+    /* position: fixed; */
+    top: 10px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    margin: 0 auto;
+    border-radius: 8px;
+    
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #395144;
+    font-family: 'Dancing';
+}
+
+header .navbar {
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: 'Sans';
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #395144;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background-color: #395144;
+    color: #fff;
+    border-radius: 10px;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    color: #395144;
+    display: none;
+    border-radius: 10px;
+
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+
+    /* border: 1px solid #395144; */
+}
+
+header .navbar ul li:hover >ul {
+    display: initial;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-family: 'Sans';
+    font-size: 20px;
+    color: #395144;
+    cursor:pointer;
+    display: none;
+}
+
+
+/* .encabezado {
     padding: 25px 15px;
     background-color: #fff;
     border-radius: 20px;
@@ -72,7 +161,7 @@ h1 a {
     background-color: #395144;
     color: #fff;
     border-radius: 5px;
-}
+} */
 
 
 /* CONTENIDO HOME */
@@ -89,6 +178,7 @@ h1 a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 3px;
 }
 
 .home a {

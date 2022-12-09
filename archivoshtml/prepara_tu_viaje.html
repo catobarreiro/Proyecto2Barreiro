@@ -12,19 +12,31 @@
 
 <body>
     <!-- BARRA DE NAVEGACION -->
-    <header class="encabezado">
-        <div class="encabezado__contenido">
-            <h1 class="encabezado__contenido-titulo"><a href="../index.html">Villa Alpina</a></h1>
-            <nav>
-                <ul class="encabezado__contenido-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./conocenos.html">Conócenos</a></li>
-                    <li><a href="./prepara_tu_viaje.html">Prepara tu viaje</a></li>
-                    <li><a href="./opiniones.html">Opiniones</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <a href="../index.html" class="logo">Villa Alpina</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./conocenos.html">Conocenos+</a>
+                    <ul>
+                        <li><a href="./galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li><a href="./prepara_tu_viaje.html">Prepara tu viaje+</a>
+                    <ul>
+                        <li><a href="./prepara_tu_viaje.html">Donde dormir?</a></li>
+                        <li><a href="./prepara_tu_viaje.html">Donde comer?</a></li>
+                        <li><a href="./prepara_tu_viaje.html">Como llegar?</a></li>
+                    </ul>
+                </li>
+                <li><a href="./opiniones.html">Opiniones</a></li>
+            </ul>
+        </nav>
     </header>
+
 
     <main>
         <section class="viaje">
