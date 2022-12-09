@@ -48,8 +48,6 @@ h1 a {
 .encabezado__contenido-menu {
     list-style-type: none;
     text-align: end;
-    ;
-
 }
 
 .encabezado__contenido-menu li {
@@ -104,27 +102,27 @@ h1 a {
     text-align: center;
 }
 
-span img {
-    width: 30px;
-    height: 30px;
+.icono__menu {
     display: none;
 }
 
 
 
 /* CONTENIDO-CONOCENOS */
-main {
+.informacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Sans';
     margin: 20px;
     border-radius: 5px;
 }
 
-.informacion {
-    display: flex;
-    font-family: 'Sans';
+.informacion__texto {
+    margin-right: 10px;
 }
 
 .informacion__historia {
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .informacion_historia-subtitulo {
@@ -134,6 +132,29 @@ main {
     border-radius: 5px;
 }
 
+/* MAPA */
+.informacion__ubicacion-subtitulo {
+    font-family: 'Sans';
+    color: #395144;
+    text-align: start;
+    border-radius: 5px;
+}
+
+.informacion__ubicacion-mapa {
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 3);
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+.informacion__ubicacion-mapa:hover {
+    box-shadow: 3px 3px 15px 5px rgba(57, 90, 68, 7);
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+}
 
 .informacion__pueblo {
     margin-left: 3px;
@@ -160,7 +181,8 @@ main {
 
 .boton__galeria-fotos {
     width: 90%;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
 
@@ -180,13 +202,15 @@ main {
 
 .boton__galeria-fotos li:hover {
     margin: 8px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 25px 50px -12px rgba(57, 90, 68, 7);
 }
 
 
 /* FORMULARIOS */
 .formulario__casillero {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 20px 0px 0px;
 }
 
 .formulario__titulo a {
@@ -207,52 +231,38 @@ input {
 }
 
 .formulario__casillero-consulta {
-    width: 430px;
+    width: 90%;
     height: 100px;
 }
 
 .formulario__casillero-nombre {
-    width: 250px;
+    width: 90%;
 }
 
 .formulario__casillero-celular {
-    width: 250px;
+    width: 90%;
 }
 
 .formulario__casillero-email {
-    width: 250px;
+    width: 90%;
+    margin-bottom: 16px;
 }
 
 .formulario__boton {
-    font-size: 20px;
+    font-size: 16.5px;
+    text-decoration: none;
     color: #fff;
     background-color: #395144;
+    padding: 8px 90%;
+    border-radius: 8px;
+    margin: 0;
 }
 
 .formulario__boton:hover {
-    font-size: 21px;
-    color: #fff;
+    color: #000;
     background-color: #395144;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 7);
+    box-shadow: 3px 3px 15px 5px rgba(57, 90, 68, 7);
 }
-
-
-/* MAPA */
-.informacion__ubicacion-subtitulo {
-    font-family: 'Sans';
-    color: #395144;
-    text-align: start;
-    border-radius: 5px;
-}
-
-.informacion__ubicacion-mapa {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 7);
-    border-radius: 10px;
-    width: 500px;
-    height: 615px;
-}
-
-
 
 /* CONTENIDO GALERIA */
 .galeria__titulo {
@@ -289,7 +299,7 @@ input {
     width: 150px;
     height: 100px;
     border-radius: 5px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9)
+    box-shadow: 0 25px 50px -12px rgba(57, 90, 68, 7);
 }
 
 .modal {
@@ -382,6 +392,10 @@ input {
 
 
 /* CONTENIDO VIAJE */
+.viaje {
+    justify-content: center;
+}
+
 .viaje__titulo {
     font-family: 'Sans';
     font-size: 40px;
@@ -402,14 +416,14 @@ input {
 
 .tarjeta__viaje {
     background-color: #F0EBCE;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 25px 50px -12px rgba(57, 90, 68, 7);
     border-radius: 10px;
     font-family: 'Sans';
     height: 410px;
     padding: 15px;
-    width: 340px;
+    max-width: 350px;
     position: relative;
-    margin: 30px;
+    margin: 0px 20px 20px 20px;
 }
 
 .tarjeta__viaje-encabezado {
@@ -438,20 +452,14 @@ input {
 }
 
 .tarjeta__viaje-descripcion {
-    height: 50px;
-    margin-bottom: 10px;
-    /* overflow-y: scroll; */
+    height: auto;
+    margin: 4px 0px 10px 0px;
 }
 
 .tarjeta__viaje-enlace {
     background-color: #AA8B56;
     text-decoration: none;
-    /* display: inline; */
-    /* pierden: margin top, bottom, height, width */
     display: inline-block;
-    /* margin-top: 200px; */
-    /* margin-bottom: 500px; */
-    /* height: 50px;  */
     width: 92%;
     position: absolute;
     bottom: 10px;
@@ -461,7 +469,6 @@ input {
     color: #fff;
     padding: 15px 0;
     font-size: 20px;
-
 }
 
 .tarjeta__viaje-enlace:hover {
@@ -479,6 +486,7 @@ input {
 .opiniones {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .tarjeta__opiniones-titulo {
@@ -490,19 +498,19 @@ input {
 
 .tarjeta__opiniones-contenido {
     display: grid;
-    justify-content: center;
+    justify-items: center;
 }
 
 .tarjeta__opiniones {
     background-color: #F0EBCE;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 25px 50px -12px rgba(57, 90, 68, 7);
     border-radius: 10px;
     font-family: 'Sans';
     height: 300px;
-    padding: 20px;
-    width: 300px;
+    padding: 15px;
+    max-width: 300px;
     position: relative;
-    margin: 30px;
+    margin: 0px 20px 20px 20px;
 }
 
 .tarjeta__opiniones-texto {
@@ -526,8 +534,8 @@ input {
 }
 
 .tarjeta__opiniones-persona-nombre {
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: bolder;
+    font-size: 25px;
     margin: 30px 0px 0px 10px
 }
 
@@ -541,18 +549,18 @@ input {
     margin-top: 100px;
     height: 170px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .footer__titulo {
     font-family: 'Dancing';
-    /* text-align: left; */
 }
 
 .footer__titulo a {
     color: #F0EBCE;
-    font-size: 50px;
+    font-size: 45px;
+    padding-right: 10px;
 }
 
 .footer__contenido {
@@ -566,6 +574,9 @@ input {
     font-size: 15px;
     color: black;
     list-style-type: none;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+
 }
 
 .footer__informacion h3 {
@@ -578,6 +589,8 @@ input {
     text-decoration: none;
     font-family: 'Sans';
     text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 .footer__menu a {
@@ -595,6 +608,99 @@ input {
 
 /* MEDIAQUERIES */
 
-@media screen{
+@media (max-width: 1110px) {
+    
+    .tarjeta__viaje-encabezado-imagen {
+        height: 170px;
+     }
+
+     .tarjeta__opiniones-persona-foto {
+        border-radius: 50%;
+        width: 60px;
+        margin: 10px 10px 0px 10px
+    }
+
+    .tarjeta__opiniones-texto-opinion {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 910px) {
+    .encabezado__contenido-menu li {
+        display: none;
+    }
+
+    .icono__menu {
+        display: inline;
+    }
+
+    .icono__menu img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer {
+        display: block;
+        height: 260px;
+    }
+
+    .footer__contenido {
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .footer__titulo {
+        text-align: center;
+    }
+
+    .informacion {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .viaje__contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .opiniones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjeta__opiniones-texto-opinion {
+        font-size: 17px;
+}
+}
+
+@media (max-width:725px) {
+    .tarjeta__viaje-encabezado-imagen {
+        height: 160px;
+     }
+
+     .tarjeta__opiniones-persona-foto {
+        border-radius: 50%;
+        width: 57.5px;
+        margin: 10px 10px 0px 10px
+    }
+
+    .tarjeta__opiniones-texto-opinion {
+        font-size: 14.5px;
+    }
+}
+
+@media (max-width:650px) {
+
+    .footer {
+        display: block;
+        height: 290px;
+    }
+
+    .boton__galeria-fotos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
     
 }
+

@@ -21,6 +21,7 @@
                     <li><a href="./conocenos.html">Conócenos</a></li>
                     <li><a href="./prepara_tu_viaje.html">Prepara tu viaje</a></li>
                     <li><a href="./opiniones.html">Opiniones</a></li>
+                    <span class="icono__menu"><a href=""><img src="../imagenes/icono menu.png" alt="icono menu"></a></span>
                 </ul>
             </nav>
         </div>
@@ -28,7 +29,8 @@
 
     <!-- PAGINA PRINCIPAL -->
     <main class="informacion">
-        <!-- INFORMACION DEL LUGAR -->
+        <div class="informacion__texto">
+            <!-- INFORMACION DEL LUGAR -->
         <div class="informacion__historia">
             <h2 class="informacion_historia-subtitulo"> Historia</h2>
             <p class="informacion_historia-parrafo">Villa Alpina es una localidad argentina ubicada en el Departamento
@@ -38,52 +40,49 @@
                 un año más tarde realizó un loteo de 150 hectáreas que se extendía desde el río Los Reartes hacia el
                 Norte. Al poco tiempo comenzaron a instalarse en el lugar varias familias de origen alemán y quienes
                 plantaron pinos, abedules, sauces, eucaliptos y álamos que hoy forman un paisaje singular.</p>
-
-            <div class="informacion__pueblo">
-                <h2 class="informacion__pueblo-subtitulo">Nuestro Pueblo</h2>
-                <p class="informacion__pueblo-parrafo">Ccontamos con 154 habitantes, segun el ultimo estudio relizado
-                    por el INDEC en el a;o 2010, lo que representa un incremento del 220% frente a los 48 habitantes
-                    analizados or el INDEC en el 2001, el censo anterior. Contamos con escuela, enfermería, teléfono y
-                    varios alojamientos. Además tenemos la Capilla San Francisco de la Iglesia Católica.</p>
-            </div>
-
-            <div class="boton__galeria">
-                <h2><a href="./galeria.html">Galeria</a></h2>
-                <ul class="boton__galeria-fotos">
-                    <li><a href="./galeria.html"><img src="../imagenes/imagen 1.jpg" alt="Paisaje 1"></a></li>
-                    <li><a href="./galeria.html"><img src="../imagenes/imagen 2.jpg" alt="Paisaje 2"></a></li>
-                    <li><a href="./galeria.html"><img src="../imagenes/imagen 3.jpg" alt="Paisaje 3"></a></li>
-                    <li><a href="./galeria.html"><img src="../imagenes/imagen 4.jpg" alt="Paisaje 4"></a></li>
-                </ul>
-            </div>
-
-            <!-- FORMULARIO -->
-            <div class="formulario">
-                <h2 class="formulario__titulo"><a>Consultanos</a></h2>
-                <form class="formulario__casillero">
-                    <div>
-                        <input class="formulario__casillero-nombre" type="text" placeholder="Nombre" maxlength="20"
-                            name="Nombre">
-                        <input class="formulario__casillero-celular" type="tel" placeholder="Celular" maxlength="20"
-                            name="Celular">
-                        <input class="formulario__casillero-email" type="email" placeholder="Mail" name="Email">
-                        <input class="formulario__boton" type="button" value="Enviar" href="./conocenos.html">
-                    </div>
-                    <input class="formulario__casillero-consulta" type="text" placeholder="Consulta" maxlength="600"
-                        name="Consulta">
-                </form>
-            </div>
-
         </div>
-        <!-- MAPA -->
+
+        <div class="informacion__pueblo">
+            <h2 class="informacion__pueblo-subtitulo">Nuestro Pueblo</h2>
+            <p class="informacion__pueblo-parrafo">Ccontamos con 154 habitantes, segun el ultimo estudio relizado
+                por el INDEC en el a;o 2010, lo que representa un incremento del 220% frente a los 48 habitantes
+                analizados or el INDEC en el 2001, el censo anterior. Contamos con escuela, enfermería, teléfono y
+                varios alojamientos. Además tenemos la Capilla San Francisco de la Iglesia Católica.</p>
+        </div>
+
+        <div class="boton__galeria">
+            <h2><a href="./galeria.html">Galeria</a></h2>
+            <ul class="boton__galeria-fotos">
+                <li><a href="./galeria.html"><img src="../imagenes/imagen 1.jpg" alt="Paisaje 1"></a></li>
+                <li><a href="./galeria.html"><img src="../imagenes/imagen 2.jpg" alt="Paisaje 2"></a></li>
+                <li><a href="./galeria.html"><img src="../imagenes/imagen 3.jpg" alt="Paisaje 3"></a></li>
+                <li><a href="./galeria.html"><img src="../imagenes/imagen 4.jpg" alt="Paisaje 4"></a></li>
+            </ul>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="formulario">
+            <h2 class="formulario__titulo"><a>Consultanos</a></h2>
+            <form class="formulario__casillero">
+                <div>
+                    <input class="formulario__casillero-nombre" type="text" placeholder="Nombre" maxlength="20" name="Nombre">
+                    <input class="formulario__casillero-celular" type="tel" placeholder="Celular" maxlength="20" name="Celular">
+                    <input class="formulario__casillero-email" type="email" placeholder="Mail" name="Email">
+                    <a class="formulario__boton" href="./conocenos.html">Enviar</a>
+                </div>
+                <input class="formulario__casillero-consulta" type="text" placeholder="Consulta" maxlength="600" name="Consulta">
+            </form>
+        </div>
+        </div>
         <div>
-            <div class="informacion__ubicacion">
-                <h2 class="informacion__ubicacion-subtitulo">Donde estamos?</h2>
-                <iframe class="informacion__ubicacion-mapa"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13606.955406685882!2d-64.81932996634876!3d-31.960617278613114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2cc0a27ea2d1f%3A0x9dd9554d7478f62a!2sVilla%20Alpina%2C%20C%C3%B3rdoba!5e1!3m2!1ses!2sar!4v1669737630679!5m2!1ses!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <!-- MAPA -->
+        <div class="informacion__ubicacion">
+            <h2 class="informacion__ubicacion-subtitulo">Donde estamos?</h2>
+            <iframe class="informacion__ubicacion-mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13606.955406685882!2d-64.81932996634876!3d-31.960617278613114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2cc0a27ea2d1f%3A0x9dd9554d7478f62a!2sVilla%20Alpina%2C%20C%C3%B3rdoba!5e1!3m2!1ses!2sar!4v1669737630679!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         </div>
     </main>
 
