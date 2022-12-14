@@ -28,7 +28,7 @@ header {
     left: 0;
     right: 0;
     background: #fff;
-    padding: 10px 7%;
+    padding: 10px 3%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -501,7 +501,7 @@ input {
     box-shadow: 0 25px 50px -12px rgba(57, 90, 68, 7);
     border-radius: 10px;
     font-family: 'Sans';
-    height: 410px;
+    height: 420px;
     padding: 15px;
     max-width: 350px;
     position: relative;
@@ -565,17 +565,18 @@ input {
 
 
 /* CONTENIDO OPINIONES */
-.opiniones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
 
 .tarjeta__opiniones-titulo {
     font-family: 'Sans';
     font-size: 40px;
     text-align: center;
     color: #395144;
+}
+
+.opiniones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .tarjeta__opiniones-contenido {
@@ -588,9 +589,9 @@ input {
     box-shadow: 0 25px 50px -12px rgba(57, 90, 68, 7);
     border-radius: 10px;
     font-family: 'Sans';
-    height: 300px;
+    height: auto;
     padding: 15px;
-    max-width: 300px;
+    max-width: 350px;
     position: relative;
     margin: 0px 20px 20px 20px;
 }
@@ -604,6 +605,11 @@ input {
     margin-top: 10px;
 }
 
+.tarjeta__opiniones-texto-opinion {
+    font-size: 18px;
+
+}
+
 .tarjeta__opiniones-persona {
     display: flex;
     align-items: center;
@@ -612,15 +618,16 @@ input {
 .tarjeta__opiniones-persona-foto {
     border-radius: 50%;
     width: 70px;
-    margin: 10px 10px 0px 10px
+    margin: 10px 10px 0px 10px;
+    align-items: center;
+
 }
 
-.tarjeta__opiniones-persona-nombre {
+.tarjeta__persona-nombre {
     font-weight: bolder;
-    font-size: 25px;
-    margin: 30px 0px 0px 10px
+    font-size: 18px;
+    align-items: center;
 }
-
 
 
 
@@ -709,25 +716,32 @@ input {
 }
 
 @media (max-width: 910px) {
-    .encabezado__contenido-menu li {
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
         display: none;
     }
 
-    .menu__responsive {
-        display: inline;
+    header .navbar ul li {
+        width: 100%;
     }
 
-    .menu__icono {
-        display: inline;
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
     }
 
-    .menu__icono:hover {
-
+    header .navbar ul li ul li {
+        background: rgba(57, 90, 68, 0.2);
     }
-
-    .menu__icono img {
-        width: 45px;
-        height: 45px;
+    #menu-bar:checked ~ .navbar{
+        display: initial;
     }
 
     .footer {
@@ -841,6 +855,10 @@ input {
         width: 90%;
         height: 100px;
         margin: 0px 15px;
+    }
+
+    header .logo {
+        font-size: 45px;
     }
 }
 
